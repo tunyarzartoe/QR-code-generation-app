@@ -16,7 +16,6 @@ const qrcode = new QRCode(
         correctLevel: QRCode.CorrectLevel.H  // 誤り訂正レベルの設定（Hは最高，少し汚れても読める設定）
     }
 );
-
 // テキストボックスの入力内容が変化した場合の処理
 textInput.addEventListener('input', e => {
     const value = e.target.value;  // テキストボックスの入力内容を取得
@@ -31,7 +30,6 @@ textInput.addEventListener('input', e => {
         downloadButton.style.display = 'inline-block';  // ダウンロードボタンを表示
     }
 });
-
 // ダウンロードボタンがクリックされた場合
 downloadButton.addEventListener('click', () => {
     // qrcode.jsで生成されたQRコードの画像（img要素）を取得
