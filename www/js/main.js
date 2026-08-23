@@ -4,7 +4,6 @@
 const textInput = document.getElementById('text-input');
 const qrcodeElement = document.getElementById('qrcode');
 const downloadButton = document.getElementById('download-button');
-
 // qrcode.jsライブラリの機能を使ってQRコードを描画するためのオブジェクトを生成
 const qrcode = new QRCode(
     qrcodeElement,  // 生成したQRコード画像を埋め込む要素
